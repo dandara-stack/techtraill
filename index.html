@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechTrail — Aprenda tecnologia em um ambiente que parece o futuro</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="tt-navbar" id="ttNavbar">
+  <nav class="navbar navbar-expand-lg container-fluid px-3 px-lg-5">
+    <a class="navbar-brand tt-brand" href="#top">
+      <img src="./logo.png" alt="TechTrail" class="tt-logo-img">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ttNav" aria-label="Abrir menu">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="ttNav">
+      <ul class="navbar-nav mx-lg-auto align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#cursos">Cursos Disponíveis</a></li>
+        <li class="nav-item"><a class="nav-link" href="#trilhas">Trilhas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certificados">Certificados</a></li>
+      </ul>
+
+      <form class="tt-search d-flex align-items-center mt-3 mt-lg-0" role="search" onsubmit="return false;">
+        <i class="bi bi-search"></i>
+        <input type="search" placeholder="Buscar cursos, trilhas..." aria-label="Buscar">
+        <kbd class="d-none d-xl-inline">⌘K</kbd>
+      </form>
+
+      <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0 ms-lg-3 tt-nav-actions">
+        <a href="./login.html" class="btn tt-btn-ghost">Login</a>
+        <a href="./cadastro.html" class="btn tt-btn-gradient">Cadastre-se</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="tt-hero" id="top">
+  <div class="tt-hero-bg" aria-hidden="true"></div>
+  <div class="tt-hero-overlay" aria-hidden="true"></div>
+
+  <div class="container tt-hero-content">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-7">
+        <span class="tt-eyebrow"><i class="bi bi-cpu"></i> Plataforma de evolução tech</span>
+        <h1 class="tt-hero-title">Aprender tecnologia em um ambiente que parece o <span class="tt-gradient-text">futuro</span></h1>
+        <p class="tt-hero-sub">Trilhas guiadas, projetos reais e uma comunidade tech para transformar sua carreira — no seu ritmo, sem enrolação.</p>
+
+        <div class="d-flex flex-wrap gap-3 tt-hero-ctas">
+          <a href="#trilhas" class="btn tt-btn-gradient btn-lg">Quero Evoluir <i class="bi bi-arrow-right ms-1"></i></a>
+          <a href="#cursos" class="btn tt-btn-outline btn-lg">Ver Trilhas</a>
+        </div>
+
+        <div class="tt-hero-progressbars">
+          <div class="tt-mini-course">
+            <div class="tt-mini-head">
+              <span><i class="bi bi-code-slash"></i> Frontend Mastery</span>
+              <strong>50%</strong>
+            </div>
+            <div class="tt-progress"><div class="tt-progress-fill tt-fill-cyan" style="--w:50%"></div></div>
+          </div>
+          <div class="tt-mini-course">
+            <div class="tt-mini-head">
+              <span><i class="bi bi-palette"></i> UI/UX Design</span>
+              <strong>20%</strong>
+            </div>
+            <div class="tt-progress"><div class="tt-progress-fill tt-fill-purple" style="--w:20%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="tt-glass tt-progress-card">
+          <span class="tt-progress-card-label">Progress Card</span>
+          <div class="tt-ring-wrap">
+            <svg viewBox="0 0 160 160" class="tt-ring">
+              <circle cx="80" cy="80" r="70" class="tt-ring-track"></circle>
+              <circle cx="80" cy="80" r="70" class="tt-ring-fill"></circle>
+            </svg>
+            <div class="tt-ring-center">
+              <strong>35%</strong>
+              <span>Completo</span>
+            </div>
+          </div>
+          <p class="tt-progress-card-foot"><i class="bi bi-lightning-charge-fill"></i> Continue de onde parou</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CATEGORIAS ===================== -->
+<section class="tt-categories">
+  <div class="container">
+    <div class="tt-cat-scroller">
+      <button class="tt-cat active"><i class="bi bi-code-slash"></i> Desenvolvimento</button>
+      <button class="tt-cat"><i class="bi bi-vector-pen"></i> Design</button>
+      <button class="tt-cat"><i class="bi bi-megaphone"></i> Marketing</button>
+      <button class="tt-cat"><i class="bi bi-briefcase"></i> Negócios</button>
+      <button class="tt-cat"><i class="bi bi-cpu"></i> Inteligência Artificial</button>
+      <button class="tt-cat"><i class="bi bi-rocket-takeoff"></i> Produtividade</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRILHAS (elemento assinatura) ===================== -->
+<section class="tt-section" id="trilhas">
+  <div class="container">
+    <div class="tt-section-head">
+      <span class="tt-tag">Construa sua carreira</span>
+      <h2>Sua trilha, passo a passo</h2>
+      <p>Cada módulo abre o próximo. Sem atalhos — só progresso real, no seu tempo.</p>
+    </div>
+
+    <div class="tt-trail">
+      <svg class="tt-trail-path" viewBox="0 0 1200 220" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M 60 180 C 260 180, 260 40, 460 40 S 660 180, 860 180 S 1060 40, 1160 40" />
+      </svg>
+
+      <div class="tt-trail-nodes">
+        <div class="tt-node">
+          <div class="tt-node-dot done"><i class="bi bi-check-lg"></i></div>
+          <div class="tt-node-card">
+            <span class="tt-node-level">Iniciante</span>
+            <h3>Fundamentos Tech</h3>
+            <p>Lógica, Git e o mapa geral do desenvolvimento.</p>
+          </div>
+        </div>
+        <div class="tt-node">
+          <div class="tt-node-dot current"><i class="bi bi-lightning-fill"></i></div>
+          <div class="tt-node-card">
+            <span class="tt-node-level">Intermediário</span>
+            <h3>Frontend Mastery</h3>
+            <p>HTML, CSS, JavaScript e interfaces reais.</p>
+          </div>
+        </div>
+        <div class="tt-node">
+          <div class="tt-node-dot"><i class="bi bi-lock-fill"></i></div>
+          <div class="tt-node-card">
+            <span class="tt-node-level">Intermediário</span>
+            <h3>Backend &amp; APIs</h3>
+            <p>Servidores, banco de dados e integrações.</p>
+          </div>
+        </div>
+        <div class="tt-node">
+          <div class="tt-node-dot"><i class="bi bi-lock-fill"></i></div>
+          <div class="tt-node-card">
+            <span class="tt-node-level">Avançado</span>
+            <h3>Especialista Full Stack</h3>
+            <p>Projeto final e certificação de carreira.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CURSOS ===================== -->
+<section class="tt-section tt-section-alt" id="cursos">
+  <div class="container">
+    <div class="tt-section-head">
+      <span class="tt-tag">Cursos disponíveis</span>
+      <h2>Recomendados para você</h2>
+      <p>Selecionados a partir das trilhas mais procuradas pela comunidade TechTrail.</p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4">
+        <article class="tt-course-card">
+          <div class="tt-course-cover tt-cover-1"><i class="bi bi-filetype-js"></i></div>
+          <div class="tt-course-body">
+            <h3>JavaScript Avançado</h3>
+            <div class="tt-course-meta">
+              <span><i class="bi bi-clock"></i> 8h</span>
+              <span class="tt-badge">Intermediário</span>
+            </div>
+            <div class="tt-course-rating"><i class="bi bi-star-fill"></i> 4.8</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <article class="tt-course-card">
+          <div class="tt-course-cover tt-cover-2"><i class="bi bi-braces-asterisk"></i></div>
+          <div class="tt-course-body">
+            <h3>React do Zero à Maestria</h3>
+            <div class="tt-course-meta">
+              <span><i class="bi bi-clock"></i> 12h</span>
+              <span class="tt-badge">Iniciante</span>
+            </div>
+            <div class="tt-course-rating"><i class="bi bi-star-fill"></i> 4.9</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <article class="tt-course-card">
+          <div class="tt-course-cover tt-cover-3"><i class="bi bi-palette2"></i></div>
+          <div class="tt-course-body">
+            <h3>UI/UX Design Completo</h3>
+            <div class="tt-course-meta">
+              <span><i class="bi bi-clock"></i> 10h</span>
+              <span class="tt-badge">Intermediário</span>
+            </div>
+            <div class="tt-course-rating"><i class="bi bi-star-fill"></i> 4.7</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <article class="tt-course-card">
+          <div class="tt-course-cover tt-cover-4"><i class="bi bi-filetype-py"></i></div>
+          <div class="tt-course-body">
+            <h3>Python para Iniciantes</h3>
+            <div class="tt-course-meta">
+              <span><i class="bi bi-clock"></i> 6h</span>
+              <span class="tt-badge">Iniciante</span>
+            </div>
+            <div class="tt-course-rating"><i class="bi bi-star-fill"></i> 4.9</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <article class="tt-course-card">
+          <div class="tt-course-cover tt-cover-5"><i class="bi bi-graph-up-arrow"></i></div>
+          <div class="tt-course-body">
+            <h3>Produtividade Máxima</h3>
+            <div class="tt-course-meta">
+              <span><i class="bi bi-clock"></i> 4h</span>
+              <span class="tt-badge">Todos os níveis</span>
+            </div>
+            <div class="tt-course-rating"><i class="bi bi-star-fill"></i> 4.6</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <article class="tt-course-card tt-course-cta-card">
+          <i class="bi bi-stars tt-course-cta-icon"></i>
+          <h3>Ver todos os cursos</h3>
+          <p>Mais de 60 cursos em 6 categorias diferentes.</p>
+          <a href="#cursos" class="btn tt-btn-outline">Explorar catálogo</a>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POR QUE TECHTRAIL ===================== -->
+<section class="tt-section">
+  <div class="container">
+    <div class="tt-section-head">
+      <span class="tt-tag">Por que TechTrail</span>
+      <h2>Feito pra quem quer virar a chave</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3">
+        <div class="tt-feature">
+          <div class="tt-feature-icon"><i class="bi bi-arrow-repeat"></i></div>
+          <h3>Evolução Constante</h3>
+          <p>Conteúdo atualizado com o que o mercado tech pede agora.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="tt-feature">
+          <div class="tt-feature-icon"><i class="bi bi-controller"></i></div>
+          <h3>Gamificação</h3>
+          <p>Conquistas, XP e trilhas que dão vontade de continuar.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="tt-feature">
+          <div class="tt-feature-icon"><i class="bi bi-people"></i></div>
+          <h3>Comunidade Tech</h3>
+          <p>Gente estudando e evoluindo junto com você, todo dia.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="tt-feature">
+          <div class="tt-feature-icon"><i class="bi bi-bar-chart-line"></i></div>
+          <h3>Construção de Carreira</h3>
+          <p>Cada trilha te aproxima de uma vaga ou de um projeto real.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CERTIFICADOS ===================== -->
+<section class="tt-section tt-section-alt" id="certificados">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6">
+        <span class="tt-tag">Certificados</span>
+        <h2 class="mb-3">Um certificado que mostra o caminho, não só o destino</h2>
+        <p class="tt-hero-sub mb-4">Ao concluir uma trilha, você recebe um certificado com verificação online, pronto pra compartilhar no LinkedIn ou anexar no seu portfólio.</p>
+        <ul class="tt-check-list">
+          <li><i class="bi bi-check-circle-fill"></i> Verificação pública via QR Code</li>
+          <li><i class="bi bi-check-circle-fill"></i> Compartilhamento direto para o LinkedIn</li>
+          <li><i class="bi bi-check-circle-fill"></i> Histórico completo da trilha percorrida</li>
+        </ul>
+        <a href="#cadastro" class="btn tt-btn-gradient">Conquistar meu certificado</a>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="tt-glass tt-certificate">
+          <div class="tt-certificate-top">
+            <img src="./logo.png" alt="TechTrail" class="tt-cert-logo">
+            <i class="bi bi-patch-check-fill tt-cert-seal"></i>
+          </div>
+          <p class="tt-cert-eyebrow">Certificado de Conclusão</p>
+          <h3 class="tt-cert-name">Frontend Mastery</h3>
+          <p class="tt-cert-desc">Concedido a <strong>Você</strong> por concluir a trilha completa de desenvolvimento frontend.</p>
+          <div class="tt-cert-footer">
+            <span>ID: TT-2026-FM-8841</span>
+            <span>TechTrail</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA FINAL ===================== -->
+<section class="tt-final-cta">
+  <div class="container text-center">
+    <h2>Sua próxima versão começa com uma trilha</h2>
+    <p>Crie sua conta grátis e comece a evoluir hoje mesmo.</p>
+    <a href="#cadastro" class="btn tt-btn-gradient btn-lg">Criar conta gratuita</a>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="tt-footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <img src="logo.png" alt="TechTrail" class="tt-footer-logo">
+        <p class="tt-footer-text">Plataforma de aprendizado tech, imersiva e feita pra quem quer construir carreira de verdade.</p>
+        <div class="tt-socials">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="Discord"><i class="bi bi-discord"></i></a>
+          <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Plataforma</h4>
+        <ul>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="#trilhas">Trilhas</a></li>
+          <li><a href="#certificados">Certificados</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Comunidade</h4>
+        <ul>
+          <li><a href="#">Discord</a></li>
+          <li><a href="#">Eventos</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Carreiras</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacidade</a></li>
+          <li><a href="#">Termos</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="tt-copy">© 2026 TechTrail. Projeto acadêmico.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
